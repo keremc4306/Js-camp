@@ -57,3 +57,38 @@ let products = [
 ]
 
 addToCart4(products) //x'e referansını gönderiyoz.
+
+//Değişkenin önündeki üç nokta rest operatörü
+function add(... numbers) {
+    let total = 0
+    for (let i = 0; i < numbers.length; i++) {
+        total = total + numbers[i]
+    }
+    console.log(total)
+}
+
+add(20,30)
+//add(20,30,40)
+//add(20,30,40,50)
+
+let numbers = [30,10,500,600,120]
+//console.log(... numbers)
+console.log(Math.max(... numbers)) // numbers'ı ayır demek
+
+//Not: spread ayrıştırır, rest toparlar
+
+let [icAnadolu,marmara,karedeniz,[icAnadoluSehirleri]] = [
+    {name: "İç Anadolu", population:"20M"}, 
+    {name: "Marmara", population:"30M"}, 
+    {name: "Karadeniz", population:"10M"},
+    [
+        ["Ankara", "Konya"],
+        ["İstanbul", "Bursa"],
+        ["Sinop", "Samsun"],
+    ]
+]
+//console.log(icAnadolu.name)
+//console.log(icAnadolu.population)
+console.log(icAnadoluSehirleri)
+
+//Destructuring: bir obje veya bir array icinden her bir elemanin alinip bir degisken icine kaydedilmesi.
