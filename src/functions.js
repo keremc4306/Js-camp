@@ -57,4 +57,3 @@ let products = [
 ]
 
 addToCart4(products) //x'e referansını gönderiyoz.
-console.log(products)
