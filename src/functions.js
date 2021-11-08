@@ -92,3 +92,11 @@ let [icAnadolu,marmara,karedeniz,[icAnadoluSehirleri]] = [
 console.log(icAnadoluSehirleri)
 
 //Destructuring: bir obje veya bir array icinden her bir elemanin alinip bir degisken icine kaydedilmesi.
+
+let newProductName, newUnitPrice, newQuantity
+({productName:newProductName, unitPrice:newUnitPrice, quantity:newQuantity } 
+= {productName:"Elma", unitPrice:10, quantity:5})
+
+console.log(newProductName)
+console.log(newUnitPrice)
+console.log(newQuantity)
